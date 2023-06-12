@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly Vergara - Profile</title>
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a id="logo-name" href="index.html"
+            ><img
+              id="logo"
+              src="./src/logo.jpg"
+              alt="Image by darkyellow325 on freepik"
+            />Dev-Hub</a
+          >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="explore.html">Explore</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <div class="search-field">
+            <input type="text" placeholder="Search" />
+          </div>
+          <ul>
+            <li><a href="login.html">Sign in</a></li>
+            <li>
+              <a href="register.html"><button>Sign up</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="profile-header">
+        <img class="user-photo" src="./src/kellyphoto.avif" alt="User Photo" />
+        <h1>Kelly Vergara</h1>
+        <div class="profile-links">
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://github.com/">GitHub</a>
+        </div>
+        <button id="edit-profile-btn">Edit Profile</button>
+      </div>
+
+      <div class="projects-section">
+        <h2>Projects</h2>
+        <h3>* Projects completed</h3>
+        <div class="project-list-completed">
+          <div class="project">
+            <h3 id="project1-name">E-commerce website</h3>
+            <p id="project1-description">
+              E-commerce websites full stack development projects require
+              significant backend programming. This makes them one of the most
+              sought-after advanced full stack projects. For example, managing
+              shopping carts requires a volume of data manipulation throughout a
+              visitor’s visit. APIs connect e-commerce sites to banking systems
+              like PayPal and RazorPay, allowing consumers to link their payment
+              information and transact securely.
+            </p>
+            <p>Stack: HTML, CSS, JavaScript</p>
+          </div>
+          <div class="project">
+            <h3 id="project2-name">Social media app</h3>
+            <p id="project2-description">
+              hese apps allow people to communicate online and can be one of the
+              best project ideas for full stack development. Using both
+              front-end and back-end, developers can build an app to upload,
+              view, and share content.
+            </p>
+            <p>Stack: Python, Django, PostgreSQL</p>
+          </div>
+          <div class="project">
+            <h3 id="project3-name">Chat messaging app</h3>
+            <p id="project3-description">
+              Being a popular full stack developer project, a chat messaging
+              software enables the exchange of messages among individuals or in
+              a group. Chat messaging apps aren’t very complicated. However,
+              sending and receiving messages and saving them for future
+              reference necessitates both frontend and backend development work.
+            </p>
+            <p>Stack: React, Node.js, MongoDB</p>
+          </div>
+        </div>
+        <h3>* Projects in progress</h3>
+        <div class="project-list-progress">
+          <div class="project">
+            <h3 id="inProgress1-name">Workout tracker</h3>
+            <p id="inProgress1-description">
+              In this full-stack project, the backend development takes care of
+              functionalities and data management, and front end development is
+              responsible for app UI and data representation. You should include
+              features like progress tracking, workout training, exercise
+              library, workout plans, social features, notifications, etc in
+              your workout tracker app to make it more usable for the users.
+            </p>
+            <p>Stack: HTML, CSS, JavaScript</p>
+            <p>Collaborators needed: 1 mentor, 1 developer</p>
+          </div>
+          <div class="project">
+            <h3 id="inProgress2-name">Video Conferencing app or website</h3>
+            <p id="inProgress2-description">
+              Due to the hybrid or remote work being adopted on a large scale,
+              video conferencing apps and websites such as Zoom, Google Meet,
+              Microsoft Teams, etc. have become a major part of our lives.
+            </p>
+            <p>Stack: Python, Django, PostgreSQL</p>
+            <p>Collaborators needed: 1 mentor, 1 developer</p>
+          </div>
+          <div class="project">
+            <h3 id="inProgress3-name">Food delivery app</h3>
+            <p id="inProgress3-description">
+              Next on the list of project ideas for full stack development are
+              food delivery apps. Food delivery applications have grown in
+              popularity in recent years. These apps offer a range of features,
+              such as grocery shopping, meal planning, recipes, and food
+              deliveries.
+            </p>
+            <p>Stack: React, Node.js, MongoDB</p>
+            <p>Collaborators needed: 1 mentor, 1 developer</p>
+          </div>
+        </div>
+        <div class="add-project-section">
+            <h3>Add a New Project</h3>
+            <div>
+              <form id="project-form">
+                <div>
+                  <label for="project-name-input">Project Name:</label>
+                  <input type="text" id="project-name-input" required>
+                </div>
+                <div>
+                  <label for="project-description-input">Project Description:</label>
+                  <textarea id="project-description-input" required></textarea>
+                </div>
+                <div>
+                  <label for="project-tech-input">Technology:</label>
+                  <input type="text" id="project-tech-input" required>
+                </div>
+                <div id="stack-required">
+                  <label for="stack-required-input">Stack Required:</label>
+                  <input type="text" id="stack-required-input">
+                </div>
+                <div>
+                  <label for="project-in-progress-input">In Progress:</label>
+                  <input type="checkbox" id="project-in-progress-input">
+                </div>
+                <button type="submit" id="add-project-btn">Add project</button>
+              </form>       
+            </div>
+        <button id="edit-projects-btn">Edit Projects</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2023 Dev-Hub, Inc. All rights reserved.</p>
+        <div class="newsletter">
+          <h4>Subscribe to our newsletter</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <ul>
+          <li><a href="">Find a Mentor</a></li>
+          <li><a href="">DevRoadmap</a></li>
+          <li><a href="">DataRoadmap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2023 Dev-Hub, Inc. | <a href="#">Terms and Conditions</a></p>
+        <div class="social-media-icons">
+          <a href="#"
+            ><img id="social-logo" src="./src/facebook-logo.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img id="social-logo" src="./src/twitter-logo.png" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              id="social-logo"
+              src="./src/instagram-logo.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

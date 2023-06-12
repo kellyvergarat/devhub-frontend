@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Dev-Hub</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <script
+      src="https://kit.fontawesome.com/7acd3c3632.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a id="logo-name" href="index.html"
+            ><img
+              id="logo"
+              src="./src/logo.jpg"
+              alt="Image by darkyellow325 on freepik"
+            />Dev-Hub</a
+          >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="explore.html">Explore</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign up</h1>
+        <form>
+          <div class="input-group">
+            <div class="input-field" id="nameField">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <p>Lost password <a href="" id="forgotLink">Click here</a></p>
+          </div>
+          <div class="btn-field">
+            <button type="button" id="signupBtn">Sign up</button>
+            <button type="button" class="disable" id="signinBtn"> Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-left">
+        <p>&copy; 2023 Dev-Hub, Inc. All rights reserved.</p>
+        <div class="newsletter">
+          <h4>Subscribe to our newsletter</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <ul>
+          <li><a href="">Find a Mentor</a></li>
+          <li><a href="">DevRoadmap</a></li>
+          <li><a href="">DataRoadmap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2023 Dev-Hub, Inc. |
+          <a href="terms.html">Terms and Conditions</a>
+        </p>
+        <div class="social-media-icons">
+          <a href="#"
+            ><img id="social-logo" src="./src/facebook-logo.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img id="social-logo" src="./src/twitter-logo.png" alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              id="social-logo"
+              src="./src/instagram-logo.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
